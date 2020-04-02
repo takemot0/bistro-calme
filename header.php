@@ -31,13 +31,21 @@
 
         <div class="header_links">
             <nav class="gnav">
-                <ul class="">
+                <!-- <ul class="">
                     <li><a href="#">HOME</a></li>
                     <li><a href="#">わたしたちについて</a></li>
                     <li><a href="#">アクセス</a></li>
                     <li><a href="#">最新情報</a></li>
                     <li><a href="#">お問い合わせ</a></li>
-                </ul>
+                </ul> -->
+                <?php
+                $args = array(
+                    'menu' => 'global-navigation', //管理画面で作成したメニューの名前
+                    'menu_class' => '', //メニューを構成するulタグのクラス名
+                    'container' => false, // <ul>タグをラップするかラップするならdivかnavを指定。falseで無し
+                );
+                wp_nav_menu($args);
+                ?>
             </nav>
 
             <ul class="header_sns">

@@ -16,4 +16,6 @@
     }
 
     add_theme_support('post-thumbnais');
+
+    add_theme_support('menus');
 ?>
