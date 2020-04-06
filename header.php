@@ -22,11 +22,7 @@
             </div>
 
             <div class="header_desc"><p><?php bloginfo('description'); ?></p></div>
-
-            <form class="header_search">
-                <input type="text" placeholder="キーワードを入力">
-                <i class="fas fa-search"></i>
-            </form>
+            <?php get_search_form(); ?>
         </div>
 
         <div class="header_links">
