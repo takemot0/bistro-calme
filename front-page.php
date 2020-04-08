@@ -12,7 +12,6 @@
             <header class="sec_header">
                 <h2 class="title">最新情報<span>NEWS</span></h2>
             </header>
-
             <div class="row">
             <?php if(have_posts()): ?>
             <?php while( have_posts() ) : the_post(); ?>
